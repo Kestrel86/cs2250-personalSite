@@ -1,0 +1,27 @@
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.nav li {
+  float: left;
+  border-right: 2px solid #bbb;
+}
+
+ul.nav li a {
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul.nav li:last-child {
+  border-right: none;
+}
+
+ul.nav li a.hover {
+  background-color: blue;
+}
