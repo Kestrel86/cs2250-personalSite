@@ -22,6 +22,6 @@ ul.nav li:last-child {
   border-right: none;
 }
 
-ul.nav li a.hover {
+ul.nav li a:hover {
   background-color: blue;
 }
