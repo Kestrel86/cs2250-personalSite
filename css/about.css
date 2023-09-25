@@ -64,3 +64,43 @@ ul.nav li:last-child {
 }
 
 /* //////////////////////// */
+
+body {
+  background: fixed;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+details {
+  margin: 1.3rem 0;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  align-content: center;
+  align-items: center;
+}
