@@ -1,8 +1,12 @@
 body {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   box-sizing: border-box;
   font-family: sans-serif, "Montserrat";
+  display: block;
 }
 
 /* ////////////////////////// */
@@ -74,7 +78,7 @@ ul.nav li:last-child {
 }
 
 .title em {
-  text-shadow: grey;
+  text-shadow: none;
   text-align: center;
 }
 
@@ -88,8 +92,6 @@ ul.nav li:last-child {
   transform: scale(1.1);
   transition: 1s ease;
   z-index: 50;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
 }
 
 .sammich img {
@@ -110,22 +112,16 @@ ul.nav li:last-child {
 }
 
 .blurryCoffee img:hover {
-  -webkit-filter: blur(5px);
   filter: blur(5px);
   transition: 1s ease;
 }
 
 .destiny img {
-  -webkit-filter: brightness(0%);
   filter: brightness(0%);
-  -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
 }
 
 .destiny img:hover {
-  -webkit-filter: brightness(100%);
   filter: brightness(100%);
 }
 
@@ -137,4 +133,54 @@ ul.nav li:last-child {
   cursor: default;
   transform: rotate(360deg);
   transition: all 0.3s ease-in-out 0s;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: groove;
+  align-self: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table caption {
+  font-size: 1.5em;
+  border-style: hidden;
+}
+
+.animateText {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h4 {
+  text-align: center;
 }
