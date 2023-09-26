@@ -61,6 +61,10 @@ ul.nav li:last-child {
     width: 100%;
     transition: 0.5s;
   }
+  img {
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 /* //////////////////////// */
@@ -133,4 +137,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.container {
+  margin: 1.3rem;
 }
