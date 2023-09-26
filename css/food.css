@@ -68,6 +68,10 @@ ul.nav li:last-child {
 }
 
 /* //////////////////////// */
+body {
+  background: fixed;
+  background-color: lightgrey;
+}
 
 .fav {
   background: #ff9999;

@@ -72,6 +72,10 @@ ul.nav li:last-child {
 }
 
 /* //////////////////////// */
+body {
+  background: fixed;
+  background-color: lightblue;
+}
 
 .title {
   display: grid;
